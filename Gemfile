@@ -48,3 +48,14 @@ gem 'bootstrap-sass-extras'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'validates_formatting_of'
 gem 'tzinfo-data'
+gem 'paperclip', '~> 4.2.1'
+
+group :development do
+	gem 'better_errors'
+
+	gem 'binding_of_caller'
+
+	gem 'meta_request'
+
+
+end

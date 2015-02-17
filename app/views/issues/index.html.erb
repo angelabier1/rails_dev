@@ -1,2 +1,17 @@
-<h1>Issues#index</h1>
-<p>Find me in app/views/issues/index.html.erb</p>
+
+<h1>Issues</h1>
+<div>
+<ul>
+ <% @issues.each do |issue| %>
+  <li class="">
+    <%= issue.description  %>
+    <%= image_tag issue.photo.url(:medium) %>
+  </li>
+  <% end %>
+</ul>
+</div>
+
+<div>
+  <%= render 'form' %>
+</div>
+
